@@ -1,3 +1,4 @@
+import { router } from "expo-router";
 import React from "react";
 import { View, Text, Button, StyleSheet } from "react-native";
 
@@ -13,7 +14,7 @@ const ExpertHomeScreen = ({ navigation }: any) => {
         title="View Tasks"
         onPress={() => navigation.navigate("ExpertTasks")}
       />
-      <Button title="Logout" onPress={() => navigation.navigate("Login")} />
+      <Button title="Logout" onPress={() => router.replace("/parentLogin")} />
     </View>
   );
 };
