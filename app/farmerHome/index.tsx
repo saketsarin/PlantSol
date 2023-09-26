@@ -24,7 +24,7 @@ const CameraComponent = ({ navigation }: any) => {
   const cameraRef = useRef<Camera | null>(null);
 
   const openCamera = async () => {
-    const { status } = await Camera.requestPermissionsAsync();
+    const { status } = await Camera.requestCameraPermissionsAsync();
     if (status === "granted") {
       setIsPreviewVisible(false);
     } else {
@@ -142,6 +142,12 @@ const CameraComponent = ({ navigation }: any) => {
               <Text style={styles.closeButtonText}>Close</Text>
             </TouchableOpacity>
 
+            <View>
+              <Text>
+                Selected Pictures
+              </Text>
+            </View>
+
             <View style={styles.previewImageStack}>
               {capturedImages.map((imageUri, index) => (
                 <Image
@@ -237,7 +243,7 @@ const styles = StyleSheet.create({
   modalContainer: {
     flex: 1,
     justifyContent: "center",
-    backgroundColor: "black",
+    backgroundColor: "white",
   },
   previewImageStack: {
     display: "flex",
@@ -245,7 +251,7 @@ const styles = StyleSheet.create({
     flexWrap: "wrap",
     gap: 10,
     alignItems: "flex-end",
-    justifyContent: "center",
+    height:"50%",
   },
   addNewImageBtn: {
     width: 150,
@@ -266,7 +272,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   fullScreenImage: {
-    width: 200,
+    width: 100,
     height: 400,
   },
   descriptionContainer: {
