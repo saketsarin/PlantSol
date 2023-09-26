@@ -1869,7 +1869,7 @@
 
 "@react-native-community/cameraroll@^4.1.2":
   version "4.1.2"
-  resolved "https://registry.yarnpkg.com/@react-native-community/cameraroll/-/cameraroll-4.1.2.tgz#489c6bb6137571540d93c543d5fcf8c652b548ec"
+  resolved "https://registry.npmjs.org/@react-native-community/cameraroll/-/cameraroll-4.1.2.tgz"
   integrity sha512-jkdhMByMKD2CZ/5MPeBieYn8vkCfC4MOTouPpBpps3I8N6HUYJk+1JnDdktVYl2WINnqXpQptDA2YptVyifYAg==
 
 "@react-native-community/cli-clean@11.3.7":
@@ -2076,7 +2076,7 @@
   resolved "https://registry.npmjs.org/@react-native/normalize-colors/-/normalize-colors-0.72.0.tgz"
   integrity sha512-285lfdqSXaqKuBbbtP9qL2tDrfxdOFtIMvkKadtleRQkdOxx+uzGvFr82KHmc/sSiMtfXGp7JnFYWVh4sFl7Yw==
 
-"@react-native/virtualized-lists@^0.72.8":
+"@react-native/virtualized-lists@^0.72.4", "@react-native/virtualized-lists@^0.72.8":
   version "0.72.8"
   resolved "https://registry.npmjs.org/@react-native/virtualized-lists/-/virtualized-lists-0.72.8.tgz"
   integrity sha512-J3Q4Bkuo99k7mu+jPS9gSUSgq+lLRSI/+ahXNwV92XgJ/8UgOTxu2LPwhJnBk/sQKxq7E8WkZBnBiozukQMqrw==
@@ -2277,7 +2277,15 @@
   resolved "https://registry.npmjs.org/@types/qs/-/qs-6.9.8.tgz"
   integrity sha512-u95svzDlTysU5xecFNTgfFG5RUWu1A9P0VzgpcIiGZA9iraHOdSzcxMxQ55DyeRaGCSxQi7LxXDI4rzq/MYfdg==
 
-"@types/react@~18.2.14":
+"@types/react-native@^0.72.2":
+  version "0.72.2"
+  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.72.2.tgz#27c931a899c555b28e20cdd12e570b017808de96"
+  integrity sha512-/eEjr04Zqo7mTMszuSdrLx90+j5nWhDMMOgtnKZfAYyV3RwmlpSb7F17ilmMMxZWJY81n/JZ4e6wdhMJFpjrCg==
+  dependencies:
+    "@react-native/virtualized-lists" "^0.72.4"
+    "@types/react" "*"
+
+"@types/react@*", "@types/react@~18.2.14":
   version "18.2.22"
   resolved "https://registry.npmjs.org/@types/react/-/react-18.2.22.tgz"
   integrity sha512-60fLTOLqzarLED2O3UQImc/lsNRgG0jE/a1mPW9KjMemY0LMITWEsbS4VvZ4p6rorEHd5YKxxmMKSDK505GHpA==
@@ -2584,7 +2592,7 @@ at-least-node@^1.0.0:
 
 axios@^1.5.0:
   version "1.5.0"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-1.5.0.tgz#f02e4af823e2e46a9768cfc74691fdd0517ea267"
+  resolved "https://registry.npmjs.org/axios/-/axios-1.5.0.tgz"
   integrity sha512-D4DdjDo5CY50Qms0qGQTTw6Q44jl7zRwY7bthds06pUGfChBCTcQs+N743eFWGEd6pRTMd6A+I87aWyFV5wiZQ==
   dependencies:
     follow-redirects "^1.15.0"
@@ -3751,10 +3759,10 @@ expo-asset@~8.10.1:
     path-browserify "^1.0.0"
     url-parse "^1.5.9"
 
-expo-camera@^13.6.0:
-  version "13.6.0"
-  resolved "https://registry.yarnpkg.com/expo-camera/-/expo-camera-13.6.0.tgz#a38537f474da4073ca4c19b5551e5178be5c899e"
-  integrity sha512-8lxK15D2tuEZom9bhDMMqNPW+5241Ak4wIup/ebh4JekgOtSQ/egbq7qDn2FCFi+5vPFKX4nRsvGOuzfuzvmZA==
+expo-camera@~13.4.4:
+  version "13.4.4"
+  resolved "https://registry.yarnpkg.com/expo-camera/-/expo-camera-13.4.4.tgz#e01ead31a3150398d37e94c307f6937480680690"
+  integrity sha512-7k54APbpSulUDR2CrD5SrmKjCdfdg4tqKRpbBOKc2J2MIBHhunExU77435JDYSejHRY5bfRHZsEp3yKwR862uw==
   dependencies:
     invariant "^2.2.4"
 
@@ -3787,17 +3795,17 @@ expo-head@0.0.14:
   dependencies:
     react-helmet-async "^1.3.0"
 
-expo-image-loader@~4.4.0:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/expo-image-loader/-/expo-image-loader-4.4.0.tgz#35909516311aa60fa4bf35aa6eb7624d7f7f788d"
-  integrity sha512-dq88tiRB8aB1U+O/oJI7IY4VU9Nu2iDjEwR8QDfLtD4xWd5lNGoyic5Vh7911E1qNJFqNMSVIVzOD5l1SQ3A6g==
+expo-image-loader@~4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/expo-image-loader/-/expo-image-loader-4.3.0.tgz#d897b4d4f1838faa8291c36f00b99c2b36a6ac5c"
+  integrity sha512-2kqJIO+oYM8J3GbvTUHLqTSpt1dLpOn/X0eB4U4RTuzz/faj8l/TyQELsMBLlGAkweNUuG9LqznbaBz+WuSFEw==
 
-expo-image-picker@^14.5.0:
-  version "14.5.0"
-  resolved "https://registry.yarnpkg.com/expo-image-picker/-/expo-image-picker-14.5.0.tgz#fdc14c74ad338a6a630f8fc5c81e642d6bea343c"
-  integrity sha512-9icvfQuWMdNKufFqu+FxenKcfybz9ior+XYQCIl/q5+mpHPo2tKq8I30vu2BjsOJ0Cfo7V4vMeN7a9F/3ooUfQ==
+expo-image-picker@~14.3.2:
+  version "14.3.2"
+  resolved "https://registry.yarnpkg.com/expo-image-picker/-/expo-image-picker-14.3.2.tgz#5ae2f36fe518a10c8fe82e5ff2ee735c14817cfc"
+  integrity sha512-xr/YeQMIYheXecWP033F2SPwpBlBR5xVCx7YSfSCTH8Y9pw7Z886agqKGbS9QBVGlzJ5qecJktZ6ASSzeslDVg==
   dependencies:
-    expo-image-loader "~4.4.0"
+    expo-image-loader "~4.3.0"
 
 expo-keep-awake@~12.3.0:
   version "12.3.0"
@@ -3815,10 +3823,10 @@ expo-linking@~5.0.2:
     qs "^6.11.0"
     url-parse "^1.5.9"
 
-expo-media-library@^15.6.0:
-  version "15.6.0"
-  resolved "https://registry.yarnpkg.com/expo-media-library/-/expo-media-library-15.6.0.tgz#32d0b3d1baf2d16ab98c8f3b929a50152df055d6"
-  integrity sha512-SsV+sdPcV9nSmvlCqTfF9rt/3KoWutKvAxk1EFke2BEklcdn9FhupdOFvodW6m3wYkBNdhJaqTRniZHvjYNs8A==
+expo-media-library@~15.4.1:
+  version "15.4.1"
+  resolved "https://registry.yarnpkg.com/expo-media-library/-/expo-media-library-15.4.1.tgz#577efb13d912e28e9c3fcc5022156e204a59b7e8"
+  integrity sha512-lpWcT4pynWcE7TyNMUkLFH4YcueCTnq7UOJYRR0vewPEJeQXwRscka7zBtrhA+RSsJda013Q0615K+5lRLt14Q==
 
 expo-modules-autolinking@1.5.1:
   version "1.5.1"
@@ -4078,7 +4086,7 @@ flow-parser@^0.206.0:
 
 follow-redirects@^1.15.0:
   version "1.15.3"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.3.tgz#fe2f3ef2690afce7e82ed0b44db08165b207123a"
+  resolved "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.3.tgz"
   integrity sha512-1VzOtuEM8pC9SFU1E+8KfTjZyMztRsgEfwQl44z8A25uy13jSzTj6dyK2Df52iV0vgHCfBwLhDWevLn95w5v6Q==
 
 fontfaceobserver@^2.1.0:
@@ -4157,7 +4165,7 @@ fs.realpath@^1.0.0:
 
 fsevents@^2.3.2:
   version "2.3.3"
-  resolved "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz"
+  resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.3.tgz#cac6407785d03675a2a5e1a5305c697b347d90d6"
   integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
 
 function-bind@^1.1.1:
@@ -5365,7 +5373,7 @@ leven@^3.1.0:
 
 lightningcss-darwin-arm64@1.19.0:
   version "1.19.0"
-  resolved "https://registry.npmjs.org/lightningcss-darwin-arm64/-/lightningcss-darwin-arm64-1.19.0.tgz"
+  resolved "https://registry.yarnpkg.com/lightningcss-darwin-arm64/-/lightningcss-darwin-arm64-1.19.0.tgz#56ab071e932f845dbb7667f44f5b78441175a343"
   integrity sha512-wIJmFtYX0rXHsXHSr4+sC5clwblEMji7HHQ4Ub1/CznVRxtCFha6JIt5JZaNf8vQrfdZnBxLLC6R8pC818jXqg==
 
 lightningcss-darwin-x64@1.19.0:
@@ -6532,7 +6540,7 @@ prop-types@*, prop-types@^15.6.2, prop-types@^15.7.2:
 
 proxy-from-env@^1.1.0:
   version "1.1.0"
-  resolved "https://registry.yarnpkg.com/proxy-from-env/-/proxy-from-env-1.1.0.tgz#e102f16ca355424865755d2c9e8ea4f24d58c3e2"
+  resolved "https://registry.npmjs.org/proxy-from-env/-/proxy-from-env-1.1.0.tgz"
   integrity sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==
 
 psl@^1.1.33:
@@ -6697,7 +6705,7 @@ react-is@^17.0.1:
 
 react-native-animatable@1.3.3:
   version "1.3.3"
-  resolved "https://registry.yarnpkg.com/react-native-animatable/-/react-native-animatable-1.3.3.tgz#a13a4af8258e3bb14d0a9d839917e9bb9274ec8a"
+  resolved "https://registry.npmjs.org/react-native-animatable/-/react-native-animatable-1.3.3.tgz"
   integrity sha512-2ckIxZQAsvWn25Ho+DK3d1mXIgj7tITkrS4pYDvx96WyOttSvzzFeQnM2od0+FUMzILbdHDsDEqZvnz1DYNQ1w==
   dependencies:
     prop-types "^15.7.2"
@@ -6715,7 +6723,7 @@ react-native-gesture-handler@~2.12.0:
 
 react-native-modal@^13.0.1:
   version "13.0.1"
-  resolved "https://registry.yarnpkg.com/react-native-modal/-/react-native-modal-13.0.1.tgz#691f1e646abb96fa82c1788bf18a16d585da37cd"
+  resolved "https://registry.npmjs.org/react-native-modal/-/react-native-modal-13.0.1.tgz"
   integrity sha512-UB+mjmUtf+miaG/sDhOikRfBOv0gJdBU2ZE1HtFWp6UixW9jCk/bhGdHUgmZljbPpp0RaO/6YiMmQSSK3kkMaw==
   dependencies:
     prop-types "^15.6.2"
