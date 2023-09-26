@@ -59,7 +59,7 @@ function RootLayoutNav() {
           <Stack.Screen name="parentLogin" options={{ headerShown: false }} />
           <Stack.Screen name="farmerHome" options={{ headerShown: false }} />
           <Stack.Screen name="expertHome" options={{ headerShown: false }} />
-          <Stack.Screen name="modal" options={{ presentation: "modal" }} />
+          {/* <Stack.Screen name="modal" options={{ presentation: "modal" }} /> */}
         </Stack>
       </ThemeProvider>
     </SafeAreaProvider>
