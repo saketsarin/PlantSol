@@ -21,7 +21,7 @@ export default function LoginScreen() {
     // Simulate different login/home states based on userType
     if (userType === "farmer") {
       // Navigate to the farmer home screen
-      router.replace("/farmerHome");
+      router.replace("/login");
     } else if (userType === "expert") {
       // Navigate to the expert home screen
       router.replace("/expertHome");
