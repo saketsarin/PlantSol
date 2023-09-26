@@ -21,8 +21,8 @@ export default function TabLayout() {
     tabBarActiveTintColor: Colors[colorScheme ?? "light"].tint,
   };
 
-  const galleryOptions = {
-    title: "Gallery",
+  const homeOptions = {
+    title: "Home",
     tabBarIcon: ({ color }: any) => <TabBarIcon name="image" color={color} />,
   };
 
@@ -52,7 +52,7 @@ export default function TabLayout() {
 
   return (
     <Tabs screenOptions={tabsOptions}>
-      <Tabs.Screen name="gallery" options={galleryOptions} />
+      <Tabs.Screen name="home" options={homeOptions} />
       <Tabs.Screen name="index" options={indexOptions} />
       <Tabs.Screen name="history" options={historyOptions} />
     </Tabs>
